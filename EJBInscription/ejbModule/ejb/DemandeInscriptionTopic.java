@@ -23,7 +23,7 @@ import persistance.DialogueBd;
  * Message-Driven Bean implementation class for: DemandeInscriptionTopic
  */
 @MessageDriven(activationConfig = {
-		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/jms/topic/DemandeInscriptionJmsTopic"),
+		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:jboss/exported/topic/DemandeInscriptionJmsTopic"),
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic") }, mappedName = "DemandeInscriptionJmsTopic")
 public class DemandeInscriptionTopic implements MessageListener {
 
